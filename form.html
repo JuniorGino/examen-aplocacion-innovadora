@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - App Innovadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+
+    <header>
+        <h1>App Innovadora</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="info.html">Información</a>
+        <a href="form.html" class="active">Formulario</a>
+    </nav>
+
+    <main>
+        <div class="content-card">
+            <h2>Registro de usuario</h2>
+            <form action="procesar.html" method="get">
+                
+                <div class="inputs">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" required>
+                </div>
+
+                <div class="inputs">
+                    <label>Email:</label>
+                    <input type="email" name="email" required> 
+                </div>
+
+                <div class="inputs">
+                    <label>Edad:</label>
+                    <input type="number" name="edad" min="21" max="80">
+                </div>
+
+                <div class="inputs">
+                    <label>Fecha de nacimiento:</label>
+                    <input type="date" name="fecha">
+                </div>
+               
+
+                <div class="inputs">
+                    <label>Género:</label>
+                    <div class="radio-group">
+                        <label class="radio-item"><input type="radio" name="genero" value="masculino"> Masculino</label>
+                        <label class="radio-item"><input type="radio" name="genero" value="femenino"> Femenino</label>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <label>País:</label>
+                    <select name="pais">
+                        <option value="espana">España</option>
+                        <option value="rusia">Rusia</option>
+                        <option value="china">China</option>
+                        <option value="usa">Estados Unidos</option>
+                    </select>
+                </div>
+
+                <div class="inputs">
+                    <label>Intereses:</label>
+                    
+                        <label class="checkbox-item"><input type="checkbox" name="intereses" value="programacion"> Programación</label>
+                        <label class="checkbox-item"><input type="checkbox" name="intereses" value="construccion"> Construcción</label>
+                        <label class="checkbox-item"><input type="checkbox" name="intereses" value="inversiones"> Inversiones</label>
+                  
+                </div>
+
+                <div class="inputs">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="privacidad" required>
+                        Acepto la política de privacidad
+                    </label>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+     <footer>
+        <p> 2026 este sitio es un proyecto de <a href="https://github.com/Penascalf5">Penascalf5</a></p>
+    </footer>
+
+
+</body>
+</html>
