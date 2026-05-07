@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Idea Innovadora</title>
+    <meta name="description" content="Accede a tu cuenta de Idea Innovadora para gestionar tus proyectos de vivienda moderna y personalizada.">
+    <link rel="stylesheet" href="../styles/comun.css">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>  
+
+    <header>
+        <div id="clock"></div>
+        <h1>App Innovadora</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Inicio</a>
+        <a href="info.html">Información</a>
+        <a href="form.html">Registro</a>
+        <a href="login.html" class="active">Login</a>
+    </nav>
+
+    <main>
+        <div class="content-card">
+            <h2>Iniciar Sesión</h2>
+            <div id="login-message" style="margin-bottom: 20px; font-weight: bold; text-align: center;"></div>
+            <form id="loginForm">
+                <div class="inputs">
+                    <label>Usuario:</label>
+                    <input type="text" id="loginUser" required>
+                </div>
+                 
+                <div class="inputs">
+                    <label>Contraseña:</label>
+                    <input type="password" id="loginPass" required>
+                </div>
+
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p> 2026 este sitio es un proyecto de <a href="https://github.com/JuniorGino/examen-aplocacion-innovadora">GitHub</a></p>
+    </footer>
+
+    <script src="../js/time.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
